@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name = "viewport" content =
+  "with=device-width, initial-scale = 1.0">
+  <title>Bear Shop E-Commerce Lite</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel = "stylesheet" href = "style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<main>
+  <section class = "header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class ="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h3>World's First:</h3>
+      <h1>Bear Shop</h1>
+      <p>Being an Ugly Bear is hard. That's why Bear Shop is here!</p>
+      <a href="#contact" class="hero-btn">Know More!</a>
+    </div>
+  </section>
+
+  <!--Products-->
+  <section class = "products" id="products">
+    <h1>Top Products</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua.</p>
+  <div class = "row">
+    <div class = "products-col" data-aos="fade-right">
+        <img src = "images/carpet.jpg">
+      <h3>Carpets</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+    <div class = "products-col" data-aos="fade-up">
+      <img src = "images/furcoat.jpg">
+      <h3>Coats</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+    <div class = "products-col" data-aos="fade-left">
+      <img src = "images/furboots.png">
+      <h3>Boots</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. </p>
+    </div>
+  </div>
+  </section>
+  <!--About Us-->
+  <section class = "about" id="about">
+    <div class="about-left">
+    <img src="images/what.png" data-aos="fade-right">
+    </div>
+    <div class="about-right">
+    <h1>About Me</h1>
+    <p data-aos="fade-left">Name: Lorenzo Osorio
+    </p><br>
+    <p data-aos="fade-right">Campus: CEU-Manila
+    </p><br>
+    <p data-aos="fade-up">Interest and Hobbies: Sleeping
+    </p><br>
+    <p data-aos="fade-down">Skills: Nothing
+    </p><br>
+    </div>
+  </section>
+  <!--Contact Us-->
+  <section class = "contact" id="contact">
+    <h1>Contact Us</h1>
+    <div class="contact-left">
+    <img src="images/logo.png" data-aos="fade-left">
+    </div>
+    <div class="contact-right">
+    <p data-aos="fade-up">Contact No: 0912381732813721987<br>
+    Telephone No: 1234555-222-111<br>
+    Address: Lipsum St. Okinawa, New York Department City<br>
+    E-mail us @ barebears@gmail.com</p><br>
+    </div>
+    <h3>For Educational Purposes only</h3>
+  </section>
+
+
+</main>
+<!--Bootstrap-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
+</script>
+</body>
+</html>
